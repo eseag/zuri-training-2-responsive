@@ -1,0 +1,100 @@
+body {
+    background-color: black;
+    background-image: url(/bg-intro-desktop.png);
+    background-color: rgb(210, 107, 124);
+    margin: 0px;
+    padding: 0px;
+    font-family:Poppins ;
+}
+    @media screen and (max-width:1440px) {
+        body{
+            background-image: url(/bg-intro-desktop.png);
+        }
+    }
+    @media screen and (max-width:375px) {
+        body{
+            background-image: url(/bg-intro-mobile.png);
+    background-color: hsl(0, 100%, 74%) ;
+        }
+    }
+h3 {
+font-size: 55px;
+color: white;
+margin: 0;
+}
+h4 {
+    font-size: 16px;
+    color: white;
+    line-height: 24px;
+    
+}
+
+.parent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+
+input{
+    width: 90%;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid  hsl(246, 25%, 77%);
+
+}
+.column1{
+    width: 40%;
+    padding: 15px;
+    /* margin-right: 10px; */
+
+}
+.column2{
+    width: 40%;
+   
+    /* margin-left: 10px; */
+}
+.column4{
+    background-color:  hsl(248, 32%, 49%);
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    padding: 5px;
+}
+.column3{
+    padding: 40px;
+    background-color: white;
+    border-radius: 15px;
+}
+@media screen and (max-width:800px) {
+    .parent{
+        flex-direction: column;
+    }
+    .column1 {
+        width: 100%;
+        padding: 0px;
+    }
+    .column2 {
+        width: 100%;
+        padding: 20px;
+    }
+    h3{
+        font-size: 32px;
+    }
+    
+}
+input:active{
+    border: 1px solid  hsl(249, 10%, 26%) ;
+}
+button {
+    border-radius: 15px;
+width: 100%;
+color: white;
+background-color: hsl(154, 59%, 51%);
+padding: 10px;
+}
